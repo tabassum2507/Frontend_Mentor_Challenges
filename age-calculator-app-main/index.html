@@ -5,33 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./index.css" />  
   <title>Frontend Mentor | Age calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    
   </style>
 </head>
 <body>
+  <main>
+    <div class="date__input">
+      <div>
+        <p class="title">D A Y</p>
+        <input placeholder="DD" type="number" class="day__input" id="inputDay" >
+        <div class="error" id="error-message">this field is required</div>
+      </div>
 
-  Day
-  DD
+      <div>
+        <p class="title">M O N T H</p>
+        <input placeholder="MM" type="number" class="day__input" id="inputMonth">
+        <div class="error" id="error-message"></div>
+      </div>
 
-  Month
-  MM
+      <div>
+        <p class="title">Y E A R</p>
+        <input placeholder="YYYY" type="number" class="day__input" id="inputYear">
+        <div class="error" id="error-message"></div>
+      </div>
+    </div>
 
-  Year
-  YYYY
+    <div class="bar__button">
+      <hr />
+      <button class="button__submit" type="submit" onclick="calculateAge()">
+        <img src="/assets/images/icon-arrow.svg" alt="submit button"/>
+      </button>
+    </div>
 
-  -- years
-  -- months
-  -- days
+    <div>
+      <h1><span class="total_age" id="YY">--</span> years</h1>
+      <h1><span class="total_age" id="MM">--</span> months</h1>
+      <h1><span class="total_age" id="DD">--</span> days</h1>
+    </div>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/tabassum2507">Tabassum</a>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

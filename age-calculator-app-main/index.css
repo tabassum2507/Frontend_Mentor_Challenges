@@ -1,0 +1,95 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightPink: #F0F0F0;
+    --GrayishPurple: #864DFF;
+    --DarkPurple: hsl(292, 42%, 14%);
+    --Gray: #6E6E6E;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--LightPink);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  main {
+    width: 30%;
+    background-color: var(--White);
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: 5% 5% 25% 5%;
+    margin-bottom: 50px;
+  }
+
+.date__input{
+    display: flex;
+    flex-direction: row;
+}
+
+.title{
+   color: var(--Gray);
+   font-weight: 900;
+   font-size: .75rem;
+   margin-bottom: .25rem;
+}
+
+#inputYear::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* 700 is for bold */
+}
+
+.day__input{
+    width: 60%;
+    height: 90%;
+    border-radius: 10%;
+}
+
+.bar__button {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.bar__button hr{
+    width: 100%;
+}
+
+.button__submit {
+    background-color : var(--GrayishPurple) ;
+    border-radius: 50%;
+    border-width: 0;
+    padding: 12px;
+   /* right : -35; */
+}
+
+h1 {
+    font-weight: 900; 
+    font-style: italic; 
+    font-size: 42px;
+}
+
+.total_age{
+    color: var(--GrayishPurple); 
+} 
+  
+  .error {
+    color: red;
+    font-size: 8px;
+  }
+
+  .error-input {
+    border: 1px solid red;
+  }
